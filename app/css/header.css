@@ -1,0 +1,93 @@
+.header-top{
+    background-color:#E5E5E5;
+    box-sizing: border-box;
+}
+
+
+.star img{
+    display: block;
+}
+
+.header{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #fff;
+}
+
+.header-menu{
+    max-width: 650px;
+    display: flex;
+}
+
+.header-menu a{
+    display: block;
+    padding: 16px 12px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-color: transparent;
+    font-size: 18px;
+    line-height: 18px;
+    
+    
+}
+
+.header-menu a:hover{
+    border-color: black;
+    background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+    backdrop-filter: blur(5px);
+}
+
+.btn-pad{
+    padding: 15px 38px;
+    margin-right: 10px;
+}
+
+/* .btn-pad:hover{
+    background-color: #717171;
+}
+.btn-pad:hover p{
+    color: #fff;
+} */
+
+
+.btn-pad p{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.visa-margin{
+    margin: 0 10px;
+}
+
+.hover-br:hover{
+    background-color: #A60321;
+    
+}
+
+.link-hover{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.link-hover:hover{
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.link-hover:hover path{
+    fill: #fff;
+}
+
+.header-menu .active-link{
+    border-color: black;
+    background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+    backdrop-filter: blur(5px);
+}
+
+.h-20{
+    height: 20px;
+}
+

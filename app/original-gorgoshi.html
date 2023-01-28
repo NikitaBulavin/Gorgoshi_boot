@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/clue.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gorgoshi</title>
+</head>
+<body class="body body--main">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center justify-content-center me-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+                        <a class="star" href="#"><img src="./img/star.svg" alt=""></a>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link" href="./home.html">Головна</a>
+                        </li>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link" aria-current="page" href="./index.html">Жінки</a>
+                        </li>
+                        <li class="nav-item ms-lg-4">
+                            <span class="clue " data-clue="Далі буде" >
+                                Чоловіки
+                            </span>
+                        </li>
+                        <li class="nav-item ms-lg-4">
+                            <span class="disabled clue" data-clue="Далі буде">
+                                Діти
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row align-items-center justify-content-between">
+                        <li class="nav-item me-lg-4 link-hover">
+                            <a class="nav-link h-20 d-flex" href="https://www.instagram.com/Gorgoshi_Fashion/" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7ZM10 5C11.3261 5 12.5979 5.52678 13.5355 6.46447C14.4732 7.40215 15 8.67392 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.67392 15 7.40215 14.4732 6.46447 13.5355C5.52678 12.5979 5 11.3261 5 10C5 8.67392 5.52678 7.40215 6.46447 6.46447C7.40215 5.52678 8.67392 5 10 5ZM16.5 4.75C16.5 5.08152 16.3683 5.39946 16.1339 5.63388C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.63388C14.1317 5.39946 14 5.08152 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75ZM10 2C7.526 2 7.122 2.007 5.971 2.058C5.187 2.095 4.661 2.2 4.173 2.39C3.739 2.558 3.426 2.759 3.093 3.093C2.78001 3.3954 2.53935 3.76458 2.389 4.173C2.199 4.663 2.094 5.188 2.058 5.971C2.006 7.075 2 7.461 2 10C2 12.474 2.007 12.878 2.058 14.029C2.095 14.812 2.2 15.339 2.389 15.826C2.559 16.261 2.759 16.574 3.091 16.906C3.428 17.242 3.741 17.443 4.171 17.609C4.665 17.8 5.191 17.906 5.971 17.942C7.075 17.994 7.461 18 10 18C12.474 18 12.878 17.993 14.029 17.942C14.811 17.905 15.338 17.8 15.826 17.611C16.259 17.442 16.574 17.241 16.906 16.909C17.243 16.572 17.444 16.259 17.61 15.829C17.8 15.336 17.906 14.809 17.942 14.029C17.994 12.925 18 12.539 18 10C18 7.526 17.993 7.122 17.942 5.971C17.905 5.189 17.8 4.661 17.61 4.173C17.4593 3.765 17.2191 3.39596 16.907 3.093C16.6047 2.77985 16.2355 2.53917 15.827 2.389C15.337 2.199 14.811 2.094 14.029 2.058C12.925 2.006 12.539 2 10 2ZM10 0C12.717 0 13.056 0.00999994 14.122 0.0599999C15.187 0.11 15.912 0.277 16.55 0.525C17.21 0.779 17.766 1.123 18.322 1.678C18.8305 2.1779 19.224 2.78259 19.475 3.45C19.722 4.087 19.89 4.813 19.94 5.878C19.987 6.944 20 7.283 20 10C20 12.717 19.99 13.056 19.94 14.122C19.89 15.187 19.722 15.912 19.475 16.55C19.2247 17.2178 18.8311 17.8226 18.322 18.322C17.822 18.8303 17.2173 19.2238 16.55 19.475C15.913 19.722 15.187 19.89 14.122 19.94C13.056 19.987 12.717 20 10 20C7.283 20 6.944 19.99 5.878 19.94C4.813 19.89 4.088 19.722 3.45 19.475C2.78233 19.2245 2.17753 18.8309 1.678 18.322C1.16941 17.8222 0.775931 17.2175 0.525 16.55C0.277 15.913 0.11 15.187 0.0599999 14.122C0.0129999 13.056 0 12.717 0 10C0 7.283 0.00999994 6.944 0.0599999 5.878C0.11 4.812 0.277 4.088 0.525 3.45C0.775236 2.78218 1.1688 2.17732 1.678 1.678C2.17767 1.16923 2.78243 0.775729 3.45 0.525C4.088 0.277 4.812 0.11 5.878 0.0599999C6.944 0.0129999 7.283 0 10 0Z" fill="black"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item me-lg-4 link-hover">
+                            <a class="nav-link " href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0008 1.65429C12.3498 -0.627558 15.9797 -0.551821 18.2427 1.90098C20.5046 4.35486 20.5826 8.2629 18.4787 10.812L9.99882 20L1.52098 10.812C-0.582983 8.2629 -0.503984 4.34837 1.75697 1.90098C4.02193 -0.548575 7.64486 -0.630804 10.0008 1.65429ZM16.8267 3.42979C15.3267 1.80469 12.9068 1.73869 11.3368 3.26425L10.0018 4.56044L8.66584 3.26533C7.09087 1.73761 4.67592 1.80469 3.17195 3.43195C1.68197 5.04407 1.60698 7.62455 2.97995 9.32972L9.99982 16.937L17.0197 9.3308C18.3937 7.62455 18.3187 5.04732 16.8267 3.42979Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li> -->
+                        <li class="nav-item me-lg-4 link-hover">
+                            <a class="nav-link h-20 d-flex" href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.9327 14.1683C17.9323 15.3079 17.5513 16.4133 16.8527 17.3013C16.1541 18.1894 15.1798 18.8069 14.0911 19.0516L13.5711 17.4566C14.0473 17.3764 14.5002 17.1892 14.8971 16.9085C15.294 16.6278 15.6251 16.2606 15.8664 15.8333H13.8572C13.4249 15.8333 13.0102 15.6577 12.7045 15.3451C12.3988 15.0326 12.227 14.6087 12.227 14.1666V10.8333C12.227 10.3913 12.3988 9.96734 12.7045 9.65478C13.0102 9.34222 13.4249 9.16663 13.8572 9.16663H16.2519C16.053 7.55571 15.286 6.07435 14.0948 5.00052C12.9035 3.92669 11.3699 3.33419 9.78176 3.33419C8.1936 3.33419 6.66002 3.92669 5.46877 5.00052C4.27752 6.07435 3.51048 7.55571 3.31158 9.16663H5.70631C6.13866 9.16663 6.5533 9.34222 6.85902 9.65478C7.16474 9.96734 7.33649 10.3913 7.33649 10.8333V14.1666C7.33649 14.6087 7.16474 15.0326 6.85902 15.3451C6.5533 15.6577 6.13866 15.8333 5.70631 15.8333H3.26104C2.82869 15.8333 2.41405 15.6577 2.10833 15.3451C1.80261 15.0326 1.63086 14.6087 1.63086 14.1666V9.99996C1.63086 5.39746 5.28002 1.66663 9.78176 1.66663C14.2835 1.66663 17.9327 5.39746 17.9327 9.99996V14.1683ZM16.3025 14.1666V10.8333H13.8572V14.1666H16.3025ZM3.26104 10.8333V14.1666H5.70631V10.8333H3.26104Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item me-lg-4 link-hover">
+                            <a class="nav-link h-20 d-flex shop " href="#">
+                                <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.39971 13.3333V3.33329H1.7002V1.66663H4.24947C4.47484 1.66663 4.69098 1.75442 4.85034 1.9107C5.0097 2.06698 5.09923 2.27895 5.09923 2.49996V12.5H15.6685L17.368 5.83329H6.79875V4.16663H18.4574C18.5866 4.16663 18.7141 4.19551 18.8301 4.25107C18.9462 4.30664 19.0479 4.38742 19.1273 4.48728C19.2068 4.58714 19.262 4.70346 19.2887 4.82738C19.3155 4.95131 19.3131 5.07958 19.2817 5.20246L17.1573 13.5358C17.1113 13.716 17.0052 13.876 16.8558 13.9902C16.7065 14.1045 16.5225 14.1666 16.333 14.1666H4.24947C4.0241 14.1666 3.80796 14.0788 3.6486 13.9225C3.48924 13.7663 3.39971 13.5543 3.39971 13.3333ZM5.09923 19.1666C4.64849 19.1666 4.21621 18.991 3.89749 18.6785C3.57877 18.3659 3.39971 17.942 3.39971 17.5C3.39971 17.0579 3.57877 16.634 3.89749 16.3214C4.21621 16.0089 4.64849 15.8333 5.09923 15.8333C5.54997 15.8333 5.98225 16.0089 6.30097 16.3214C6.61969 16.634 6.79875 17.0579 6.79875 17.5C6.79875 17.942 6.61969 18.3659 6.30097 18.6785C5.98225 18.991 5.54997 19.1666 5.09923 19.1666ZM15.2963 19.1666C14.8456 19.1666 14.4133 18.991 14.0946 18.6785C13.7759 18.3659 13.5968 17.942 13.5968 17.5C13.5968 17.0579 13.7759 16.634 14.0946 16.3214C14.4133 16.0089 14.8456 15.8333 15.2963 15.8333C15.7471 15.8333 16.1793 16.0089 16.4981 16.3214C16.8168 16.634 16.9958 17.0579 16.9958 17.5C16.9958 17.942 16.8168 18.3659 16.4981 18.6785C16.1793 18.991 15.7471 19.1666 15.2963 19.1666Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Пошук</button>
+                    </form> -->
+                </div>
+
+
+
+
+                        <!-- <form action="vendor/signin.php" method="post">
+                            <label> Логин </label>
+                            <input type="text" name="login" placeholder="Введіть свій логін ">
+                            <label> Пароль </label>
+                            <input type="password" name="password" placeholder="Введіть свій пароль">
+                            <button type="submits">Войти</button>
+                            <p>
+                                Не маете аккаунта? - <a href="/register.php">Зареєструйся</a>
+                                </p>
+                                <?php
+                                if ($_SESSION['massage']){
+                                    echo  '<p class="massage"> ' . $_SESSION['massage'] . ' </p>';
+                                }
+
+                                unset ($_SESSION['massage']) ;
+                                ?>
+
+                        </form> -->
+
+            </div>
+        </nav>
+        <div class="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="row align-items-center justify-content-start">
+                    <div class="header-menu ">
+                        <a class="pad-side" href="./new.html">Нове</a>
+                        <a href="./collection.html">Колекції</a>
+                        <!-- <a class="" chref="#">Взуття</a>
+                        <a class="" href="#">Розпродаж</a> -->
+                        <a class="text-uppercase  active-link" href="">Original Gorgoshi</a>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-pad btn-outline-secondary d-flex align-items-center" type="button">
+                    <p>Сплатити</p>
+                    <img class="visa-margin" src="./img/visa.png" alt="Visa">
+                    <img src="./img/mastercard.png" alt="Mastercard">
+                </button> -->
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
+</html>

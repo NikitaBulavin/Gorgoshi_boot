@@ -1,0 +1,33 @@
+
+.clue {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.09s ease-out;
+    color: #6c757d;
+  }
+  .clue:before {
+    text-align: center;
+    content: attr(data-clue);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 14px;
+    background-color: #A60321;
+    width: 110px;
+    font-size: 16px;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: inherit;
+  }
+  
+  .clue:hover:before {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    top: padding( 100% + 10px );
+  }

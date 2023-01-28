@@ -1,0 +1,161 @@
+.main{
+    padding-top: 90px;
+}
+.categories .categories-menu h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #9E9E9E;
+}
+.menu .dropdown button{
+    border:  1px solid #E4E4E4;
+    border-radius: 0;
+}
+
+.menu .dropdown button:hover{
+    background-color: #6c757d;
+    color: #fff;
+
+}
+
+.menu .dropdown button:hover line{
+    stroke: white;
+}
+
+.menu-link:hover a{
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.dropdown-menu{
+    border-radius: 0;
+}
+
+.items .boxes .box{
+    width: 466px;   
+    border: 1px solid;
+    border-image: linear-gradient(207.81deg, #151515 17.6%, #47008E 34.36%, rgba(0, 7, 168, 0.72) 65.08%, rgba(45, 91, 255, 0.68) 87.42%, #00C2FF 103.62%);
+    border-image-slice: 1;
+}
+
+.boxes{
+    gap: 38px;
+}
+.box{
+    background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+    backdrop-filter: blur(21px);
+}
+
+.box-item{
+    padding: 30px 38px 20px;
+}
+
+.box-item a{
+    cursor: pointer;
+}
+
+.box-item a img{
+    width: 100%;
+    height: 465px;
+    object-fit: cover;
+}
+
+.box-item button:hover {
+    background-color: #6c757d;
+}
+
+.box-item button:hover p{
+    color: #fff;
+}
+
+.box-item button:hover path{
+    fill: white;
+}
+
+.box-text{
+    margin-top: 34px;
+}
+
+.box-text p{
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #4D4D4D;
+}
+
+.box-text p:first-child{
+    color: #000000;
+}
+
+
+.card-size{
+    width: 540px;
+}
+
+.aria img{
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+.card-info{
+    margin-left: 80px;
+}
+
+.card-info h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.text-price{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    margin: 6px 0 24px;
+}
+
+.text-small{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.clothes-size button:nth-child(1){
+    margin-right: 10px;
+}
+
+.clothes-size-btn{
+    background: #FFFFFF;
+    
+}
+.clothes-size-btn p{
+    color: #000000;
+}
+
+.card-text{
+    margin-left: 20px;
+    margin-top: 90px;
+}
+
+.card-text li{
+    list-style: circle;
+
+}
+
+.clothes-size{
+    margin-top: 80px;
+}
+
+.br-0{
+    border-radius: 0;
+    border: 1px solid #000000;
+}
+
+.mar-top{
+    margin-top: 16px;
+}
