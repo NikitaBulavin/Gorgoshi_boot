@@ -159,3 +159,12 @@
 .mar-top{
     margin-top: 16px;
 }
+
+.letter-g{
+    top: -300px;
+    object-fit: cover;
+}
+
+.pad-left{
+    padding-left: 50px;
+}
