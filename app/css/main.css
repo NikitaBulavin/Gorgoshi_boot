@@ -1,6 +1,11 @@
 .main{
     padding-top: 90px;
 }
+
+.categories{
+    height: 9000px;
+}
+
 .categories .categories-menu h3{
     font-weight: 600;
     font-size: 18px;
@@ -99,9 +104,7 @@
     object-fit: cover;
 }
 
-.card-info{
-    margin-left: 80px;
-}
+
 
 .card-info h3{
     font-weight: 600;
@@ -143,7 +146,7 @@
 }
 
 .card-text li{
-    list-style: circle;
+    list-style: disc;
 
 }
 
@@ -160,10 +163,47 @@
     margin-top: 16px;
 }
 
-.letter-g{
-    top: -300px;
+
+.letter{
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    left: 0;
     object-fit: cover;
 }
+.letter--g{
+    top: -150px;    
+}
+
+.letter--o{
+    top: 600px;
+    
+}
+.letter--r{
+    top: 1300px;
+    
+}
+.second-g{
+    top: 2000px;
+    
+}
+.second-o{
+    top: 2700px;
+    
+}
+.letter--s{
+    top: 3450px;
+    
+}
+.letter--h{
+    top: 4200px;
+    
+}
+.letter--i{
+    top: 5000px;
+    
+}
+
 
 .pad-left{
     padding-left: 50px;

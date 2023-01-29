@@ -1,3 +1,7 @@
+.row >*{
+    padding: 0;
+}
+
 .bg-color-main{
     background-color: #717171;
 }
@@ -21,7 +25,12 @@
 
 .poster-left{
     background-image: url(../img/bg-dusk-1.png);
-
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
 }
 .poster-text {
     margin-left: 85px;
@@ -85,30 +94,41 @@
     left: 50%;
 }
 
+
 .bg-img{
-    height: 100%;
     margin: 0;
     background-image: url(../img/bg-desk-2.png);
     background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: 100%;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;
+    /* object-fit: cover; */
+    
     
 }
 
 .poster-bg{
     background-image: url(../img/poster-2.jpg);
+    background-repeat: no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size:100%;
     
+
 }
 
 
 
 .pad-top{
     position: relative;
-    padding-top: 30px;
+    margin-top: 300px;
 }
 
 .poster--left{
     justify-content: flex-start;
+    margin: 0;
 } 
 
 .pixel-flowers{
@@ -146,25 +166,23 @@
 
 .patch-plus{
     position: absolute;
-    top: 48%;
+    top: 46.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .patch-right{
     position: absolute;
-    top: 47%;
+    top: 45%;
     right: 0;
     z-index: 10;
 }
 
-.max-height{
+/* .max-height{
     max-height: 1330px;
-}
+} */
 
-.margin-side{
-    margin: 0 -12px;
-}
+
 
 
 .foil{
@@ -172,4 +190,20 @@
     top: 42%;
     left: 0;
 
+}
+
+
+
+
+
+@media screen and (max-width: 1820px){
+    .poster-arrow{
+        display: none;
+    }
+    .patch-plus{
+        display: none;
+    }
+    .patch-right{
+        display: none;
+    }
 }

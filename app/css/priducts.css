@@ -1,0 +1,11 @@
+.text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.text__par{
+    margin: 15px 0;
+}

@@ -123,6 +123,14 @@
     </header>
     <main class="container-fluid main">
             <section class="categories row">
+                <img class="img-responsive letter letter--g" src="./img/letter_g.png" alt="">
+                <img class="img-responsive letter letter--o" src="./img/letter_o.png" alt="">
+                <img class="img-responsive letter letter--r" src="./img/letter_r.png" alt="">
+                <img class="img-responsive letter second-g" src="./img/letter_g.png" alt="">
+                <img class="img-responsive letter second-o" src="./img/letter_o.png" alt="">
+                <img class="img-responsive letter letter--s" src="./img/letter_s.png" alt="">
+                <img class="img-responsive letter letter--h" src="./img/letter_h.png" alt="">
+                <img class="img-responsive letter letter--i" src="./img/letter_i.png" alt="">
                 <div class="categories-menu col-md-12 col-lg-4 col-xl-2 col-xxl-2 ">
                     <h3 class="d-flex align-items-center">Фільтр</h3>
                     <div class="menu">
@@ -166,7 +174,7 @@
                             </ul>
                         </div> -->
                         <div class="dropdown ">
-                            <button class="btn dropdown-toggle w-100 text-start d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn dropdown-toggle w-100 text-start d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                 <p>Сортувати за</p>
                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="5" x2="5" y2="10" stroke="black"/>
@@ -175,9 +183,22 @@
                             </button>
                             <div class="dropdown-menu w-100">
                                 <button class="button button_type_all" data-filter="all">All</button>
-                                <button class="button button_type_cat" data-filter="jacket">Jacket</button>
+                                <button class="btn dropdown-toggle button button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="vest" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    <p>Vest</p>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="5" x2="5" y2="10" stroke="black"/>
+                                        <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
+                                        </svg>
+                                </button>
+                                <div class="dropdown-menu w-100">
+                                    <button class="button button_type_all" data-filter="all">All</button>
+                                    <button class="button button_type_cat" data-filter="jacket">Jacket</button>
+                                    <button class="button button_type_dog" data-filter="coat">Coat</button>
+                                    <button class="button button_type_bird" data-filter="vest">Vest</button>
+                                    <button class="button button_type_bird" data-filter="grey">Grey</button>
+                                </div>
                                 <button class="button button_type_dog" data-filter="coat">Coat</button>
-                                <button class="button button_type_bird" data-filter="black">Black</button>
+                                <button class="button button_type_bird" data-filter="vest">Vest</button>
                                 <button class="button button_type_bird" data-filter="grey">Grey</button>
                             </div>
                             
@@ -188,7 +209,7 @@
                 </div>
                 <div class="items col-xl-8 col-xxl-10 position-relative">
                 
-                        <img class="position-absolute z-n5 img-responsive letter-g" src="./img/letter_g.png" alt="">
+                        
                     
                     <div class="boxes d-flex flex-wrap m-auto justify-content-center">
                                     <!-- COAT-START -->
@@ -252,9 +273,9 @@
                         </div>
                         <!-- COAT-FINISH -->
                         <!-- VEST-START -->
-                        <div class="box jacket">
+                        <div class="box black vest">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
+                                <a class="d-block w-100" href="/app/products/Vest/black-vest.html">
                                     <img src="./img/black-vest/black-vest-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
@@ -271,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box beige coat">
+                        <div class="box beige vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/biege-vest.html">
                                     <img src="./img/beige-vest/beige-vest-1.jpg" alt="">
@@ -290,9 +311,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box black coat ">
+                        <div class="box blue vest">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
+                                <a class="d-block w-100" href="/app/products/Vest/light-blue-vest.html">
                                     <img src="./img/light-blue-vest/light-blue-vest-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
@@ -309,10 +330,105 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box black coat ">
+                        <div class="box blue vest">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
+                                <a class="d-block w-100" href="/app/products/Vest/dark-blue-vest.html">
                                     <img src="./img/dark-blue-vest/dark-blue-vest-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box blue vest">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Vest/sky-blue-vest.html">
+                                    <img src="/app/img/sky-blue-vest/skyblue-vest-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box green vest">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Vest/green-vest.html">
+                                    <img src="/app/img/green-vest/green-vest-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box golden vest">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Vest/golden-rod-vest.html">
+                                    <img src="/app/img/golden-rod-vest/goldenrod-vest-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box tan vest">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Vest/tan-vest.html">
+                                    <img src="/app/img/tan-vest/tan-vest-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box white vest">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Vest/white-vest.html">
+                                    <img src="/app/img/white-vest/white-vest-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">

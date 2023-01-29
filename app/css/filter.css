@@ -70,6 +70,7 @@
     animation-name: hide;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    display:none;
 }
 
 @keyframes hide {
