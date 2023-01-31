@@ -105,7 +105,7 @@
         <div class="header">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="row align-items-center justify-content-start">
-                    <div class="header-menu">
+                    <div class="header-menu pe-0">
                         <a class="blur" href="./new.html">Нове</a>
                         <a class="blur" href="./collection.html">Колекції</a>
                         <!-- <a class="" chref="#">Взуття</a>
@@ -131,7 +131,7 @@
                 <img class="img-responsive letter letter--s" src="./img/letter_s.png" alt="">
                 <img class="img-responsive letter letter--h" src="./img/letter_h.png" alt="">
                 <img class="img-responsive letter letter--i" src="./img/letter_i.png" alt="">
-                <div class="categories-menu col-md-12 col-lg-4 col-xl-2 col-xxl-2 ">
+                <div class="categories-menu col-xl-12  col-xxl-2">
                     <h3 class="d-flex align-items-center">Фільтр</h3>
                     <div class="menu">
                         <!-- <div class="dropdown ">
@@ -174,7 +174,7 @@
                             </ul>
                         </div> -->
                         <div class="dropdown ">
-                            <button class="btn dropdown-toggle w-100 text-start d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <button class="btn dropdown-toggle w-100 text-start d-flex align-items-center justify-content-between hover" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                 <p>Сортувати за</p>
                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="5" x2="5" y2="10" stroke="black"/>
@@ -182,24 +182,67 @@
                                     </svg>
                             </button>
                             <div class="dropdown-menu w-100">
-                                <button class="button button_type_all" data-filter="all">All</button>
-                                <button class="btn dropdown-toggle button button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="vest" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                    <p>Vest</p>
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <line x1="5" x2="5" y2="10" stroke="black"/>
-                                        <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
-                                        </svg>
-                                </button>
-                                <div class="dropdown-menu w-100">
-                                    <button class="button button_type_all" data-filter="all">All</button>
-                                    <button class="button button_type_cat" data-filter="jacket">Jacket</button>
-                                    <button class="button button_type_dog" data-filter="coat">Coat</button>
-                                    <button class="button button_type_bird" data-filter="vest">Vest</button>
-                                    <button class="button button_type_bird" data-filter="grey">Grey</button>
-                                </div>
+                                <button class="button button_type_all hover" data-filter="all">All</button>
+                                        <button class="btn button  dropdown-toggle  button_type_vest w-100 text-start d-flex align-items-center justify-content-between hover" type="button" data-filter="vest" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Vest</p>
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="5" x2="5" y2="10" stroke="black"/>
+                                                <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
+                                                </svg>
+                                        </button>
+                                        <div class="dropdown-menu w-100">
+                                            <button class="button button_type_all hover" data-filter="all-vest">All</button>
+                                            <button class="button button_type_cat hover" data-filter="black-vest">Black</button>
+                                            <button class="button button_type_dog hover" data-filter="blue-vest">Blue</button>
+                                            <button class="button button_type_bird hover" data-filter="golden-vest">Golden</button>
+                                            <button class="button button_type_bird hover" data-filter="grey-vest">Grey</button>
+                                        </div>
+                                        <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="vest" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Vest</p>
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="5" x2="5" y2="10" stroke="black"/>
+                                                <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
+                                                </svg>
+                                        </button>
+                                        <div class="dropdown-menu w-100">
+                                            <button class="button button_type_all" data-filter="all-vest">All</button>
+                                            <button class="button button_type_cat" data-filter="black-vest">Black</button>
+                                            <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
+                                            <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
+                                            <button class="button button_type_bird" data-filter="grey-vest">Grey</button>
+                                        </div>
+                                        <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="black" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Vest</p> 
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="5" x2="5" y2="10" stroke="black"/>
+                                                <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
+                                                </svg>
+                                        </button>
+                                        <div class="dropdown-menu w-100">
+                                            <button class="button button_type_all" data-filter="all-vest">All</button>
+                                            <button class="button button_type_cat" data-filter="black-vest">Black</button>
+                                            <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
+                                            <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
+                                            <button class="button button_type_bird" data-filter="grey-vest">Grey</button>
+                                        </div>
+                                        <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="blue" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Vest</p>
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="5" x2="5" y2="10" stroke="black"/>
+                                                <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
+                                                </svg>
+                                        </button>
+                                        <div class="dropdown-menu w-100">
+                                            <button class="button button_type_all" data-filter="all-vest">All</button>
+                                            <button class="button button_type_cat" data-filter="black-vest">Black</button>
+                                            <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
+                                            <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
+                                            <button class="button button_type_bird" data-filter="grey-vest">Grey</button>
+                                        </div>
                                 <button class="button button_type_dog" data-filter="coat">Coat</button>
                                 <button class="button button_type_bird" data-filter="vest">Vest</button>
                                 <button class="button button_type_bird" data-filter="grey">Grey</button>
+                                <button class="button button_type_dog" data-filter="blue">Blue</button>
                             </div>
                             
                         </div>
@@ -207,7 +250,7 @@
                     </div>
 
                 </div>
-                <div class="items col-xl-8 col-xxl-10 position-relative">
+                <div class="items  col-xl-12 col-xxl-10 mt-5  mt-xxl-0 position-relative">
                 
                         
                     
@@ -273,7 +316,7 @@
                         </div>
                         <!-- COAT-FINISH -->
                         <!-- VEST-START -->
-                        <div class="box black vest">
+                        <div class="box black vest black-vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/black-vest.html">
                                     <img src="./img/black-vest/black-vest-1.jpg" alt="">
@@ -292,7 +335,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box beige vest">
+                        <div class="box beige vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/biege-vest.html">
                                     <img src="./img/beige-vest/beige-vest-1.jpg" alt="">
@@ -311,7 +354,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box blue vest">
+                        <div class="box blue vest  blue-vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/light-blue-vest.html">
                                     <img src="./img/light-blue-vest/light-blue-vest-1.jpg" alt="">
@@ -330,7 +373,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box blue vest">
+                        <div class="box blue vest blue-vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/dark-blue-vest.html">
                                     <img src="./img/dark-blue-vest/dark-blue-vest-1.jpg" alt="">
@@ -349,7 +392,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box blue vest">
+                        <div class="box blue vest blue-vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/sky-blue-vest.html">
                                     <img src="/app/img/sky-blue-vest/skyblue-vest-1.jpg" alt="">
@@ -368,7 +411,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box green vest">
+                        <div class="box green vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/green-vest.html">
                                     <img src="/app/img/green-vest/green-vest-1.jpg" alt="">
@@ -387,7 +430,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box golden vest">
+                        <div class="box golden vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/golden-rod-vest.html">
                                     <img src="/app/img/golden-rod-vest/goldenrod-vest-1.jpg" alt="">
@@ -406,7 +449,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box tan vest">
+                        <div class="box tan vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/tan-vest.html">
                                     <img src="/app/img/tan-vest/tan-vest-1.jpg" alt="">
@@ -425,7 +468,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box white vest">
+                        <div class="box white vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/white-vest.html">
                                     <img src="/app/img/white-vest/white-vest-1.jpg" alt="">

@@ -3,9 +3,13 @@
 }
 
 .categories{
-    height: 9000px;
+    height: 6000px;
+    align-items: flex-start;
 }
 
+.categories-menu{
+    max-height: 200px;
+}
 .categories .categories-menu h3{
     font-weight: 600;
     font-size: 18px;
@@ -17,7 +21,7 @@
     border-radius: 0;
 }
 
-.menu .dropdown button:hover{
+/* .menu .dropdown button:hover{
     background-color: #6c757d;
     color: #fff;
 
@@ -25,12 +29,12 @@
 
 .menu .dropdown button:hover line{
     stroke: white;
-}
+} */
 
-.menu-link:hover a{
+/* .menu-link:hover a{
     background-color: #6c757d;
     color: #fff;
-}
+} */
 
 .dropdown-menu{
     border-radius: 0;
