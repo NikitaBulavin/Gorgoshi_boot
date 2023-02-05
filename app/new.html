@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/new.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/app/img/red-star.png">
     <title>Gorgoshi</title>
 </head>
 <body class=" body body--main">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header-top">
+    <header class="fixed-blur">
+        <nav class="navbar navbar-expand-lg header-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -128,16 +129,13 @@
                 
               </div>
               <div class="poster-left  col-xxl-6">
-                <div class="mt-5">
-                  <img class="img-responsive w-100 overlay" src="./img/poster-1_2.png" alt="">
-                </div>
                 <div class="poster">
-                    <img class="position-absolute bottom-0 end-0 z-1" src="./img/bw-green-vest.jpg" alt="">
+                    <img class="position-absolute bottom-0 end-0 z-1 poster__img" src="./img/bw-green-vest.jpg" alt="">
                     <img class="poster-arrow" src="./img/poster-arrow.svg" alt="">
                     <div>
-                        <img class="position-relative z-3" src="./img/retro-green-vest.jpg" alt="">
+                        <img class="position-relative z-3 img-responsive poster__img" src="./img/retro-green-vest.jpg" alt="">
                     </div>
-                    <div class="poster-text">
+                    <div class="poster-text position-relative z-2">
                       <h3>Нова Весна</h3>
                       <p>Найпопулярніший жилет цього сезону<br>Вона підійде під тонкий светр і під теплий костюм!<br>Кольори на будь-який смак<br>актуальні цього сезону</p>
                       <a href="#">купити зараз</a>
@@ -156,11 +154,11 @@
           <article class="row max-height">
             <div class="poster poster--left bg-img col-xxl-6 position-relative">
               <div class="pixel-flowers position-absolute">
-                <img class="rotate" src="./img/pixel-flower.svg" alt="">
-                <img  src="./img/pixel-flower.svg" alt="">
+                <img class="rotate pixel-flowers__img" src="./img/pixel-flower.svg" width="262" height="262" alt="">
+                <img class="pixel-flowers__img" src="./img/pixel-flower.svg" width="262" height="262" alt="">
               </div>
               <div class="pad-top">
-                <img src="./img/white-down-jacket.png" alt="">
+                <img class="img-responsive poster__img" src="./img/white-down-jacket.png" alt="">
                 <img class="patch patch--1" src="./img/patch-1.png" alt="">
                 <img class="patch patch--2" src="./img/patch-2.png" alt="">
                 <img class="patch patch--3" src="./img/patch-3.png" alt="">

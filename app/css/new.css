@@ -20,7 +20,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
+    padding-top: 250px;
+    padding-bottom: 130px;
 }
 
 .poster-left{
@@ -40,6 +41,8 @@
     font-size: 16px;
     line-height:16px;
     color: #FFFFFF;
+    position: relative;
+    z-index: 3;
 }
 
 
@@ -63,11 +66,12 @@
 }
 
 .poster-text--black{
-    align-self: center;
+    align-self: center ;
     text-align: right;
-    margin-left: 142px;
+    margin: 0;
     margin-top: 45px;
-    padding-bottom: 80px;
+    
+    padding: 0 10px 80px;
 }
 .poster-text--black p{
     color: #000;
@@ -86,6 +90,8 @@
     align-self: start;
     margin-left: 216px;
     margin-top: -10px;
+    position: relative;
+    z-index: 2;
 }
 
 .poster-arrow{
@@ -109,7 +115,7 @@
 }
 
 .poster-bg{
-    background-image: url(../img/poster-2.jpg);
+    background-image: url(../img/poster-1.jpg);
     background-repeat: no-repeat;
     -moz-background-size:100%;
     -webkit-background-size:100%;
@@ -124,11 +130,12 @@
 .pad-top{
     position: relative;
     margin-top: 300px;
+    z-index: 1;
 }
 
 .poster--left{
     justify-content: flex-start;
-    margin: 0;
+    padding: 0;
 } 
 
 .pixel-flowers{
@@ -144,6 +151,7 @@
 
 .patch{
     position: absolute;
+    width: 182px;
 }
 
 .patch--1{
@@ -179,7 +187,7 @@
 }
 
 /* .max-height{
-    max-height: 1330px;
+    height: 1300px;
 } */
 
 
@@ -187,16 +195,16 @@
 
 .foil{
     position: absolute;
-    top: 42%;
+    top: 30%;
     left: 0;
-
+    z-index: 2;
 }
 
 
 
 
 
-@media screen and (max-width: 1820px){
+@media screen and (max-width: 1400px){
     .poster-arrow{
         display: none;
     }
@@ -205,5 +213,82 @@
     }
     .patch-right{
         display: none;
+    }
+    .poster-text, .poster-patch-arrow{
+        align-self: center;
+        margin: 0;
+        padding: 0 25px 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    .pixel-flowers__img{
+        width: 180px;
+        height: 180px;
+        z-index: 2;
+    }
+    .pad-top{
+        margin-top: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    .patch{
+        position: absolute;
+        width: 140px;
+    }
+    .patch--1{
+        top: -1%;
+        left: -5%;
+    }
+    .poster__img{
+        width: 375px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .pixel-flowers__img{
+        width: 100px;
+        height: 100px;
+    }
+    .pad-top{
+        margin-top: 120px;
+    }
+    .poster{
+        padding-bottom: 30px;
+    }
+    .poster__img{
+        width: 275px;
+    }
+    .foil{
+        top: 5%;
+    }
+    .display-none{
+        display:none;
+    }
+    .patch{
+        width: 100px;
+    }
+    .patch--1{
+        top: -1%;
+        left: -5%;
+    }
+    
+    .patch--2{
+        top: -9%;
+        right: -5%;
+    }
+    .patch--3{
+        bottom: -7%;
+        right: -15%;
+    }
+    .patch--4{
+        bottom: -5%;
+        left: -12%;
     }
 }

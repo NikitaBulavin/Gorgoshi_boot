@@ -1,4 +1,27 @@
-.bg-c{
-    background-color: #fff;
+.black-bg{
+    background-image: url(../img/black-home-bg.jpg) no-repeat;
+    -moz-background-size:100%;
+    -webkit-background-size:100%;
+    -o-background-size:100%;
+    background-size:100% 100% ;
+    object-fit: contain;
+    background-repeat: no-repeat;
 }
+.header-nav{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(2,min-content);
+}
+
+.header-nav  a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
 

@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/clue.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="/app/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/app/css/header.css">
+    <link rel="stylesheet" href="/app/css/clue.css">
+    <link rel="stylesheet" href="/app/css/main.css">
+    <link rel="stylesheet" href="/app/css/priducts.css">
+    <link rel="stylesheet" href="/app/css/style.css">
+    <link rel="icon" href="/app/img/red-star.png">
     <title>Document</title>
 </head>
 <body class="body body--main">
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary header-top">
+  <header class="fixed-blur">
+    <nav class="navbar navbar-expand-lg header-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav align-items-center justify-content-center me-auto mb-2 mb-lg-0 fs-5 fw-semibold">
-                    <a class="star" href="#"><img src="./img/star.svg" alt=""></a>
+                    <a class="star" href="#"><img src="/app/img/star.svg" alt=""></a>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link" href="./home.html">Головна</a>
+                        <a class="nav-link" href="/app/home.html">Головна</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link" aria-current="page" href="./index.html">Жінки</a>
+                        <a class="nav-link" aria-current="page" href="/app/index.html">Жінки</a>
                     </li>
                     <li class="nav-item ms-lg-4">
                         <span class="clue" data-clue="Далі буде" >
@@ -103,11 +105,11 @@
         <div class="d-flex justify-content-between align-items-center">
             <div class="row align-items-center justify-content-start">
                 <div class="header-menu ">
-                    <a href="./new.html">Нове</a>
-                    <a href="./collection.html">Колекції</a>
+                    <a href="/app/new.html">Нове</a>
+                    <a href="/app/collection.html">Колекції</a>
                     <!-- <a class="" chref="#">Взуття</a>
                     <a class="" href="#">Розпродаж</a> -->
-                    <a class="text-uppercase" href="./original-gorgoshi.html">Original Gorgoshi</a>
+                    <a class="text-uppercase" href="/app/original-gorgoshi.html">Original Gorgoshi</a>
                 </div>
             </div>
             <!-- <button class="btn btn-pad btn-outline-secondary d-flex align-items-center" type="button">
@@ -118,19 +120,25 @@
         </div>
     </div>
 </header>
-    <main class="container-fluid main">
+    <main class="main d-flex justify-content-center">
         <div class="container row justify-content-center ">
             <div class="col-auto">
                 <div id="carouselExampleAutoplaying" class="carousel slide card-size" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./img/beige-coat.jpg" class="d-block w-100" alt="">
+                        <img src="/app/img/beige-vest/beige-vest-1.jpg" class="d-block w-100" alt="">
                       </div>
                       <div class="carousel-item">
-                        <img src="./img/beige-coat-2.jpg" class="d-block w-100" alt="...">
+                        <img src="/app/img/beige-vest/beige-vest-2.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="./img/blue-jacket.jpg" class="d-block w-100" alt="...">
+                        <img src="/app/img/beige-vest/beige-vest-3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/app/img/beige-vest/beige-vest-4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/app/img/beige-vest/beige-vest-5.jpg" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -143,24 +151,19 @@
                     </button>
                   </div>
               </div>
-              <div class="col-3 card-info">
-                <div>
-                    <h3>Стьобне демісезонне пальто</h3>
-                    <p class="text-price">₴3200</p>
-                    <p class="text-small">Колір: Чорний</p>
+              <div class="col-md-10 col-xl-5 ms-lg-5 d-flex flex-column justify-content-center">
+                <div class="text">
+                    <h3 class="text__title">Стьобне демісезонне пальто</h3>
+                    <p class="text__par">Вона підійде під тонкий светр і під теплий костюм!
+                        Кольори на будь-який смак 💕актуальні цього сезону.</p>
+                    <p class="text__par text__par--margin">Колір: Бежевий</p>
+                    <p class="text__price">1 900 грн</p>
+                    
                 </div>
                 <div class="clothes-size">
-                    <div class="dropdown ">
-                        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center clothes-size-btn br-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <p>Вибери свій розмір</p>
-                            <img src="./img/small-red-arrow.svg" alt="">
-                        </button>
-                        <ul class="dropdown-menu w-100">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
+                    <p>Розмір: 42-46</p>
+                        <p>Тканина: Якісна плащівка</p> 
+                        <p>Наповнювач: Cинтетичний Пух</p>
                       <div class="d-flex mar-top">
                         <button class="btn btn-dark w-100 br-0">Додати у корзину</button>
 
@@ -175,18 +178,19 @@
                             href="#">Добавить в корзину </a>
                         <a href="./text.html" class="button">QWEKQWEQOWE</a> -->
                         <button class="btn flex-shrink-1 br-0" type="button">
-                            <img src="./img/heart-black.svg" alt="">
+                            <img src="/app/img/heart-black.svg" alt="">
                         </button>
                       </div>
                 </div>
                 <div class="card-text">
                     <h4>Деталі:</h4>
                     <ul>
-                        <li>котон</li>
-                        <li>оверсайз</li>
-                        <li>парам</li>
-                        <li>пум</li>
-                        <li>пурум</li>
+                        <li>нова колекція</li>
+                        <li>плащівка</li>
+                        <li>водостійка</li>
+                        <li>зручні кармани</li>
+                        <li>синтетичний пух</li>
+                        <li>фірмові металеві кнопки</li>
                     </ul>
                 </div>
             </div>

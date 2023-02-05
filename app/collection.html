@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/collection.css">
+    <link rel="icon" href="/app/img/red-star.png">
     <link rel="stylesheet" href="./css/clue.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
+    
+    
     <title>Gorgoshi</title>
 </head>
 <body class="body body--main">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header-top">
+    <header class="fixed-blur">
+        <nav class="navbar navbar-expand-lg header-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -103,7 +106,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="row align-items-center justify-content-start">
                     <div class="header-menu ">
-                        <a class="pad-side" href="./new.html">Нове</a>
+                        <a  href="./new.html">Нове</a>
                         <a class="active-link" href="#">Колекції</a>
                         <!-- <a class="" chref="#">Взуття</a>
                         <a class="" href="#">Розпродаж</a> -->
@@ -118,11 +121,94 @@
             </div>
         </div>
     </header>
+    <main class="container-fluid">
+        <div class="collection ">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <div class="row">
+                    <div class="col-md-4 collection-item">
+                        <div class="collection-item__info">
+                            <h3>Трендова сорочка у клітинку </h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img  src="./img/collection.jpg" height="933"  class="d-block w-100  img-responsive" alt="...">
+                        <button class="collection-item__btn">
+                            Дізнатися більше
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 collection-item">
+                        <div class="collection-item__info collection-item__info--white">
+                            <h3>Трендова сорочка у клітинку </h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img  src="./img/collection.jpg"  class="d-block w-100" alt="...">
+                        <button class="collection-item__btn">
+                            Дізнатися більше
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 collection-item">
+                        <div class="collection-item__info">
+                            <h3>Трендова сорочка у клітинку </h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img  src="./img/collection.jpg"  class="d-block w-100" alt="...">
+                        <button class="collection-item__btn">
+                            Дізнатися більше
+                        </button>
+                        </div>
+                    </div>
+ 
+                </div>
+              </div>
+             
+              
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </div>
+    </main>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
