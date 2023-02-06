@@ -1,0 +1,86 @@
+
+.tiker {
+    max-width: 100%;
+    overflow: hidden;
+}
+.iner{
+    width: 100%;
+    overflow: hidden;
+}
+.tiker p{
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 100%;
+    /* or 80px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #000000 0%, #000000 46.88%, #FFFFFF 46.88%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+.tiker--cl p{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 46.87%, #000000 46.88%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.iner p{
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 100%;
+    /* or 80px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #000000 0%, #000000 46.88%, #FFFFFF 46.88%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/*Здесь можно поиграть со свойством width: mac-content*/
+.tiker div {
+    display: flex;
+    width: 200%;
+    animation: tiker 10s linear infinite;
+}
+.iner div{
+    display: flex;
+    width: 200%;
+    animation: iner 10s linear infinite;
+
+}
+
+.position{
+
+}
+
+@keyframes iner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    }
+
+
+@keyframes tiker {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
