@@ -121,8 +121,10 @@
     -webkit-background-size:100%;
     -o-background-size:100%;
     background-size: 100% 100% ;
-    
+}
 
+.poster--bg{
+    background-image: url(../img/poster-2.jpg);
 }
 
 

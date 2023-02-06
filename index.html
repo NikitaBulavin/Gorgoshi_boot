@@ -10,6 +10,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./app/css/bootstrap.min.css">
     <link rel="stylesheet" href="./app/css/clue.css">
+    <link rel="stylesheet" href="./app/css/header.css">
     <link rel="stylesheet" href="./app/css/filter.css">
     <link rel="stylesheet" href="./app/css/main.css">
     <link rel="stylesheet" href="./app/css/style.css">
@@ -108,10 +109,10 @@
                 <div class="row align-items-center justify-content-start">
                     <div class="header-menu pe-0">
                         <a class="blur" href="./app/new.html">Нове</a>
-                        <a class="blur" href="./app//collection.html">Колекції</a>
+                        <a class="blu disabledr" href="./app//collection.html disabled">Колекції</a>
                         <!-- <a class="" chref="#">Взуття</a>
                         <a class="" href="#">Розпродаж</a> -->
-                        <a class="text-uppercase blur" href="./app/original-gorgoshi.html">Original Gorgoshi</a>
+                        <a class="text-uppercase blur disabled" href="./app/original-gorgoshi.html">Original Gorgoshi</a>
                     </div>
                 </div>
                 <!-- <button class="btn btn-pad btn-outline-secondary d-flex align-items-center" type="button">
@@ -133,7 +134,7 @@
                 <img class="img-responsive letter letter--h" src="./img/letter_h.png" alt="">
                 <img class="img-responsive letter letter--i" src="./img/letter_i.png" alt=""> -->
                 <div class="categories-menu">
-                    <h3 class="d-flex align-items-center ms-3">Фільтр</h3>
+                    <h3 class="d-flex align-items-center ms-3 mb-1">Фільтр</h3>
                     <div class="menu">
                         <div class="dropdown ">
                             <button class="btn dropdown-toggle w-100 text-start d-flex align-items-center justify-content-between hover" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -144,51 +145,46 @@
                                     </svg>
                             </button>
                             <div class="dropdown-menu show--bg w-100">
-                                <button class="button button_type_all hover" data-filter="all">All</button>
-                                        <button class="btn button  dropdown-toggle  button_type_vest w-100 text-start d-flex align-items-center justify-content-between hover" type="button" data-filter="vest" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                            <p class="filter__text">Vest</p>
+                                
+                                        <button class="btn button  dropdown-toggle  button_type_vest w-100 text-start d-flex align-items-center justify-content-between hover" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Колір</p>
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <line x1="5" x2="5" y2="10" stroke="black"/>
                                                 <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
                                                 </svg>
                                         </button>
-                                        <div class="dropdown-menu show--bg w-100 ">
-                                            <button class="button button_type_all hover" data-filter="all-vest">All</button>
-                                            <button class="button button_type_cat hover" data-filter="black-vest">Black</button>
-                                            <button class="button button_type_dog hover" data-filter="blue-vest">Blue</button>
-                                            <button class="button button_type_bird hover" data-filter="golden-vest">Golden</button>
-                                            <button class="button button_type_bird hover" data-filter="grey-vest">Grey</button>
+                                        <div class="dropdown-menu bg-color w-100 ">
+                                            <button class="button button_type_all hover" data-filter="all">Переглянути все</button>
+                                            <button class="button button_type_cat hover" data-filter="black">Чорний</button>
+                                            <button class="button button_type_dog hover" data-filter="blue">Синій</button>
+                                            <button class="button button_type_bird hover" data-filter="yellow">Жовтий</button>
+                                            <button class="button button_type_bird hover" data-filter="gray">Сірий</button>
+                                            <button class="button button_type_bird hover" data-filter="red">Червоний</button>
+                                            <button class="button button_type_bird hover" data-filter="white">Білий</button>
+                                            <button class="button button_type_bird hover" data-filter="green">Зелений</button>
+                                            <button class="button button_type_bird hover" data-filter="beige">Бежевий</button>
                                         </div>
-                                        <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="vest" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                            <p class="filter__text">Vest</p>
+                                        <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between hover" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Тип одягу</p>
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <line x1="5" x2="5" y2="10" stroke="black"/>
                                                 <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
                                                 </svg>
                                         </button>
-                                        <div class="dropdown-menu show--bg w-100">
-                                            <button class="button button_type_all" data-filter="all-vest">All</button>
-                                            <button class="button button_type_cat" data-filter="black-vest">Black</button>
-                                            <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
-                                            <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
-                                            <button class="button button_type_bird" data-filter="grey-vest">Grey</button>
-                                        </div>
-                                        <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="black" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                            <p class="filter__text">Vest</p> 
-                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line x1="5" x2="5" y2="10" stroke="black"/>
-                                                <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
-                                                </svg>
-                                        </button>
-                                        <div class="dropdown-menu show--bg w-100">
-                                            <button class="button button_type_all" data-filter="all-vest">All</button>
-                                            <button class="button button_type_cat" data-filter="black-vest">Black</button>
-                                            <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
-                                            <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
-                                            <button class="button button_type_bird" data-filter="grey-vest">Grey</button>
+                                        <div class="dropdown-menu bg-color w-100">
+                                            <button class="button button_type_all hover" data-filter="vest">Жилетки</button>
+                                            <button class="button button_type_cat hover" data-filter="coat">Пальта</button>
+                                            <button class="btn button  dropdown-toggle text-start d-flex align-items-center justify-content-between" type="button" data-filter="jacket" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                                <p class="filter__text">Куртки</p>
+                                            </button>
+                                            <div class="dropdown-menu show--bg w-100">
+                                                <button class="button button_type_all hover" data-filter="vest">Легкі</button>
+                                                <button class="button button_type_cat hover" data-filter="coat">Теплі</button>
+                                            </div>
+                                            <button class="button button_type_bird" data-filter="shirt">Сорочки</button>
                                         </div>
                                         <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="blue" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                            <p class="filter__text">Vest</p>
+                                            <p class="filter__text">Колекції</p>
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <line x1="5" x2="5" y2="10" stroke="black"/>
                                                 <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
@@ -199,63 +195,41 @@
                                             <button class="button button_type_cat" data-filter="black-vest">Black</button>
                                             <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
                                             <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
-                                            <button class="button button_type_bird" data-filter="grey-vest">Grey</button>
+                                            <button class="button button_type_bird" data-filter="gray-vest">gray</button>
                                         </div>
+                                        <!-- <button class="btn button  dropdown-toggle button_type_vest w-100 text-start d-flex align-items-center justify-content-between" type="button" data-filter="blue" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                            <p class="filter__text">Модель</p>
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="5" x2="5" y2="10" stroke="black"/>
+                                                <line x1="10" y1="5" x2="-4.37114e-08" y2="5" stroke="black"/>
+                                                </svg>
+                                        </button>
+                                        <div class="dropdown-menu show--bg w-100">
+                                            <button class="button button_type_all" data-filter="all-vest">All</button>
+                                            <button class="button button_type_cat" data-filter="black-vest">Black</button>
+                                            <button class="button button_type_dog" data-filter="blue-vest">Blue</button>
+                                            <button class="button button_type_bird" data-filter="golden-vest">Golden</button>
+                                            <button class="button button_type_bird" data-filter="gray-vest">gray</button>
+                                        </div> -->
+                                        <button class="button button_type_all hover w-100 m-1" data-filter="all">Збросити фільтр</button>
                             </div>
                             
                         </div>
                         
+                        
                     </div>
 
                 </div>
-                <div class="items mt-5  mt-xxl-0 position-relative justify-content-center">
+                <div class="items m-sm-0 m-md-auto position-relative justify-content-center">
                 
                         
                     
                     <div class="boxes d-flex flex-wrap m-auto justify-content-center">
                                     <!-- COAT-START -->
                         
-                        <div class="box black coat ">
+                        <!-- <div class="box beige coat ">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./app/img/black-coat-1.jpg" alt="">
-                                </a>
-                                <div class="box-text d-flex justify-content-between align-items-stretch">
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <p>Ціна: 3 200 грн</p>
-                                        <p>Зимовий теплий пуховик</p>
-                                    </div>
-                                    <button class="btn">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
-                                        </svg>
-                                        <p>Додати</p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box grey coat">
-                            <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./app/img/grey-coat-1.jpg" alt="">
-                                </a>
-                                <div class="box-text d-flex justify-content-between align-items-stretch">
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <p>Ціна: 3 200 грн</p>
-                                        <p>Зимовий теплий пуховик</p>
-                                    </div>
-                                    <button class="btn">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
-                                        </svg>
-                                        <p>Додати</p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box grey coat">
-                            <div class="box-item">
-                                <a class="d-block w-100" href="./app/about.html">
+                                <a class="d-block w-100" href="/app/products/Coat/beige-coat.html">
                                     <img src="./app/img/coat/beige-coat/beige-coat-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
@@ -272,6 +246,44 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="box gray coat">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Coat/grey-coat.html">
+                                    <img src="./app/img/gray-coat-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box black coat">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Coat/black-coat.html">
+                                    <img src="./app/img/black-coat-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> -->
                         <!-- COAT-FINISH -->
                         <!-- VEST-START -->
                         <div class="box black vest black-vest all-vest">
@@ -296,7 +308,7 @@
                         <div class="box beige vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/biege-vest.html">
-                                    <img src="/app/img/vest/beige-vest/beige-vest-1.jpg alt="">
+                                    <img src="/app/img/vest/beige-vest/beige-vest-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -315,7 +327,7 @@
                         <div class="box blue vest  blue-vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/light-blue-vest.html">
-                                    <img src="/app/img/vest/light-blue-vest" alt="">
+                                    <img src="/app/img/vest/light-blue-vest/light-blue-vest-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -388,7 +400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box golden vest all-vest">
+                        <div class="box yellow vest all-vest">
                             <div class="box-item">
                                 <a class="d-block w-100" href="/app/products/Vest/golden-rod-vest.html">
                                     <img src="/app/img/vest/golden-rod-vest/goldenrod-vest-1.jpg" alt="">
@@ -446,11 +458,11 @@
                             </div>
                         </div>
                         <!-- VEST-FINISH -->
-                        <!-- JACKET-START -->
-                        <div class="box grey coat">
+                        <!-- SHIRT-START -->
+                        <div class="box blue shirt blue-shirt all-shirt">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/grey-coat-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Shirt/blue-shirt.html">
+                                    <img src="./app/img/shirt/blue-shirt/blue-shirt-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -466,10 +478,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box jacket">
+                        <div class="box red shirt red-shirt all-shirt">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/blue-jacket.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Shirt/red-shirt.html">
+                                    <img src="./app/img/shirt/red-shirt/red-shirt-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -485,10 +497,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box beige coat">
+                        <div class="box yellow shirt yellow-shirt all-shirt">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/vest-blue-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Shirt/yellow-shirt.html">
+                                    <img src="./app/img/shirt/yellow-shirt/yellow-shirt-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -504,15 +516,227 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- JACKET-FINISH -->
+                        <!-- SHIRT-FINISH -->
+
+                        <!-- AUTUMN-JACKET-START -->
+                        <div class="box gray autumn jacket autumn-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/black-second-jacket.html">
+                                    <img src="./app/img/autumn-jackets/black-second-jacket/black-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box greenautumn jacket green-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/dark-olive-jackets.html">
+                                    <img src="/app/img/autumn-jackets/dark-olive-jacket/dark-olive-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box beige autumn jacket beige-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/dark-salmon-jacket.html">
+                                    <img src="/app/img/autumn-jackets/dark-salmon-jacket/dark-salmon-jacket-1 (1).jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box gray autumn jacket gray-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/dimgray-jacket.html">
+                                    <img src="/app/img/autumn-jackets/dimgray-jacket-second/dim-gray-jacket-1 (1).jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box black autumn jacket black-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/black-second-jacket.html">
+                                    <img src="/app/img/autumn-jackets/jacket-black/black-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box blue autumn jacket blue-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/jacket-blue.html">
+                                    <img src="/app/img/autumn-jackets/jacket-blue/blue-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box brown autumn jacket brown-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/jacket-brown.html">
+                                    <img src="/app/img/autumn-jackets/jacket-brown/broen-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box gray autumn jacket gray-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/jacket-dimgray.html">
+                                    <img src="/app/img/autumn-jackets/jacket-dimgray/dimgray-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box green autumn jacket green-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/jacket-olive.html">
+                                    <img src="/app/img/autumn-jackets/jacket-olive/olive-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box beige autumn jacket beige-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/jacket-salmon.html">
+                                    <img src="/app/img/autumn-jackets/salmon-jacket/salmon-jacket-1.jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box blue autumn jacket blue-jacket all-jacket">
+                            <div class="box-item">
+                                <a class="d-block w-100" href="/app/products/Autumn-jackets/jacket-steelblue.html">
+                                    <img src="/app/img/autumn-jackets/jacket-steelblue/steel-blue-jacket (1).jpg" alt="">
+                                </a>
+                                <div class="box-text d-flex justify-content-between align-items-stretch">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p>Ціна: 3 200 грн</p>
+                                        <p>Зимовий теплий пуховик</p>
+                                    </div>
+                                    <button class="btn">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
+                                        </svg>
+                                        <p>Додати</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- AUNUMN-JACKET-FINISH -->
 
 
 
-                        <!-- JACKET-START -->
-                        <div class="box black coat ">
+                        <!-- WINTER-JACKET-START -->
+                        <div class="box black winter jacket black-jacket all-jacket">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/black-coat-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Winter-jacket/black-jacket.html">
+                                    <img src="/app/img/winter-jackets/black/winter-black-jacket-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -528,10 +752,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box grey coat">
+                        <div class="box blue winter jacket blue-jacket all-jacket">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/grey-coat-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Winter-jacket/dark-blue-jacket.html">
+                                    <img src="/app/img/winter-jackets/dark-blue/winter-blue-jacket-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -547,10 +771,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box jacket">
+                        <div class="box gray winter jacket gray-jacket all-jacket">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/blue-jacket.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Winter-jacket/dimgray-lacket.html">
+                                    <img src="/app/img/winter-jackets/dim-gray/winter-gsay-jacket-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -566,10 +790,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box beige coat">
+                        <div class="box red winter jacket red-jacket all-jacket">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/vest-blue-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Winter-jacket/maroon-jacket.html">
+                                    <img src="/app/img/winter-jackets/maroon/winter-maroon-jacket-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -585,10 +809,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box black coat ">
+                        <div class="box green winter jacket green-jacket all-jacket">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/black-coat-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Winter-jacket/olive-jacket.html">
+                                    <img src="/app/img/winter-jackets/olive/winter-olive-jacket-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -604,10 +828,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box grey coat">
+                        <div class="box white winter jacket white-jacket all-jacket">
                             <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/grey-coat-1.jpg" alt="">
+                                <a class="d-block w-100" href="/app/products/Winter-jacket/white-jacket.html">
+                                    <img src="/app/img/winter-jackets/white/winter-white-jacket-1.jpg" alt="">
                                 </a>
                                 <div class="box-text d-flex justify-content-between align-items-stretch">
                                     <div class="d-flex flex-column justify-content-center">
@@ -623,25 +847,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box jacket">
-                            <div class="box-item">
-                                <a class="d-block w-100" href="./about.html">
-                                    <img src="./img/blue-jacket.jpg" alt="">
-                                </a>
-                                <div class="box-text d-flex justify-content-between align-items-stretch">
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <p>Ціна: 3 200 грн</p>
-                                        <p>Зимовий теплий пуховик</p>
-                                    </div>
-                                    <button class="btn">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.4 14.4V8H17.6V14.4H24V17.6H17.6V24H14.4V17.6H8V14.4H14.4ZM16 32C7.1632 32 0 24.8368 0 16C0 7.1632 7.1632 0 16 0C24.8368 0 32 7.1632 32 16C32 24.8368 24.8368 32 16 32ZM16 28.8C19.3948 28.8 22.6505 27.4514 25.051 25.051C27.4514 22.6505 28.8 19.3948 28.8 16C28.8 12.6052 27.4514 9.3495 25.051 6.94903C22.6505 4.54857 19.3948 3.2 16 3.2C12.6052 3.2 9.3495 4.54857 6.94903 6.94903C4.54857 9.3495 3.2 12.6052 3.2 16C3.2 19.3948 4.54857 22.6505 6.94903 25.051C9.3495 27.4514 12.6052 28.8 16 28.8Z" fill="black"/>
-                                        </svg>
-                                        <p>Додати</p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -702,7 +908,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="./js/filter.js"></script>
+    <script src="/app/js/filter.js"></script>
    
    
    

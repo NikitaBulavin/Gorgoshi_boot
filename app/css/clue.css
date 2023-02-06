@@ -17,7 +17,7 @@
     color: white;
     padding: 10px 14px;
     background-color: #A60321;
-    width: 115px;
+    min-width:120px ;
     font-size: 16px;
     visibility: hidden;
     z-index: -1;

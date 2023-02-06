@@ -27,6 +27,8 @@
     border-radius: 0;
 }
 
+
+
 .items .boxes .box{
     width: 466px;   
     border: 1px solid;
@@ -197,6 +199,7 @@
 }
 
 
+
 .pad-left{
     padding-left: 50px;
 }
@@ -210,4 +213,11 @@
     .categories-menu{
         top: 150px;
     }
+}
+
+@media screen and (max-width: 380px){
+    .row>*{
+        padding-right: 0;
+    }
+
 }
