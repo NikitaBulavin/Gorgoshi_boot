@@ -50,16 +50,12 @@
 .tiker div {
     display: flex;
     width: 200%;
-    animation: tiker 15s linear infinite;
+    animation: tiker 40s linear infinite;
 }
 .iner div{
     display: flex;
     width: 200%;
-    animation: iner 15s linear infinite;
-
-}
-
-.position{
+    animation: iner 40s linear infinite;
 
 }
 

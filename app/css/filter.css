@@ -69,6 +69,8 @@
 .hover:hover{
     color: black;
     background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 
