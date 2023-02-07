@@ -1,6 +1,10 @@
 .fixed-blur{
     
     backdrop-filter: blur(10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
     position: sticky;
     top: 0;
     width: 100%;
@@ -41,6 +45,10 @@
     border-color: black;
     background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
     backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
 
 
