@@ -79,7 +79,7 @@
 }
 
 .body{
-    font-family: 'Akcidenta','Maklight', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: 400 ;
     background-color: #fff;
@@ -88,9 +88,6 @@
 }
 
 .body--main{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-style: normal;
     color: black;
     position: relative;
     

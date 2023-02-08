@@ -8,41 +8,64 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/clue.css">
+    <link rel="stylesheet" href="./css/tiker.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="/app/img/red-star.png">
     <title>Gorgoshi</title>
 </head>
 <body class="body">
-        <header>
-            <nav class="navbar navbar-expand-lg header-top">
-                <div class="container-fluid">
+    <div class="header__overlay"></div>
+    <div  class="black-bg">
+        <header class="container-fluid pt-4">
+            
+            <nav class="navbar navbar-expand-lg">
+                <div class="ps-3">
+                    <img src="./img/red-star.svg" width="160" height="160" alt="star">
+                </div>
+                <div class="container-fluid justify-content-end">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div>
-                            <img src="./img/red-star.svg" width="160" height="160" alt="star">
-                        </div>
+                    <div class=" navbar-collapse justify-content-end m-xl-4  align-items-center collapse burger__list" id="navbarSupportedContent">
+                        
                         <div class="header-nav">
-                            <a href="">Магазин</a>
-                            <a href="">Про нас</a>
-                            <a href="">Телеграм</a>
-                            <a href="">Інстаграм</a>
-                            <a href="">Інстаграм</a>
+                            <a href="/index.html">Магазин</a>
+                            <a href="http://t.me/MarkNestLoading" target="_blank">Телеграм</a>
+                            <a href="https://www.instagram.com/gorgoshi_shop/" target="_blank">Інстаграм</a>
+                            <a class="clue" data-clue="Далі буде" href="" target="_blank">Фейсбук</a>
+                            <a class="clue" data-clue="Далі буде" href="">Про нас</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <div class="black-bg">
-            
+        <div class="gorgoshi-text">
+            <h2>fashion is my Professional</h2>
+            <h2>Gorgoshі</h2>
         </div>
+    </div>
     
-    <main class="">
-        <div class="container-fluid bg-c">
-
+    <main >
+        <div class="container-fluid main-bg">
+            <div class="main__position">
+                <div class="main__position-item">
+                    <div class="main__position-top">
+                        <h2>Де ви нас   можете знайти?</h2>
+                        <img src="./img/mark.png" width="70" height="111" alt="">
+                    </div>
+                    <div class="main__position-bot">
+                        <p>Gorgoshi.com - це онлайн  магазин.</p>
+                        <p>У нас відстуні звичні шопи у торгових центрах. Ми зорієнтовані саме на онлайн продажу, бо в наш час це найбезпечніший спосіб шопінгу.</p>
+                        <p>Ми турбуємось про життя та здоровья наших Кліентів та Працівників.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
         </div>
     </main>
     <footer class="footer ">
@@ -177,7 +200,7 @@
                 </ul>
                 <ul class="footer__info-support">
                     <h4>Слідкуйте за нами</h4>
-                    <li><a href="#">
+                    <li><a href="https://www.instagram.com/gorgoshi_shop/" target="_blank">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_236_869)">
                             <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="white"/>
@@ -191,7 +214,7 @@
                             
                          <span>Інстаграм</span></a>
                     </li>
-                    <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li><a href="http://t.me/MarkNestLoading" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_236_873)">
                         <path d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM8.89 13.17L8.903 13.163L9.773 16.033C9.885 16.344 10.039 16.4 10.226 16.374C10.414 16.349 10.513 16.248 10.636 16.13L11.824 14.982L14.374 16.87C14.84 17.127 15.175 16.994 15.291 16.438L16.948 8.616C17.131 7.888 16.811 7.596 16.246 7.828L6.513 11.588C5.849 11.854 5.853 12.226 6.393 12.391L8.89 13.17Z" fill="white"/>
                         </g>
@@ -203,7 +226,7 @@
                         </svg>
                          <span>Телеграм</span></a>
                     </li>
-                    <li><a href="#">
+                    <li><a href="#" target="_blank">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z" fill="white"/>
                             </svg>                            
@@ -271,6 +294,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+    <!-- <script src="./js/burger_menu.js"></script> -->
 </body>
 </html>
